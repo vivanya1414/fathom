@@ -66,3 +66,32 @@ To build an accessible AI-powered research assistant that simplifies information
 ## Author
 
 Developed as a personal AI and Data Science portfolio project.
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A[User Input: Research Topic]
+    B[Tavily Search]
+    C[GPT-5: Research Analysis]
+    D[Generated Research Report]
+
+    A --> B
+    B --> C
+    C --> D
+
+
+
+This represents the actual workflow:
+
+<box border radius="lg" padding={3} gap={2} align="center">
+  <box background="surface-secondary" radius="md" padding={2} width="75%" align="center">User Input</box>
+  <icon name="arrow-down"/>
+  <box background="surface-secondary" radius="md" padding={2} width="75%" align="center">Tavily Search</box>
+  <icon name="arrow-down"/>
+  <box background="surface-secondary" radius="md" padding={2} width="75%" align="center">GPT-5 Analysis</box>
+  <icon name="arrow-down"/>
+  <box background="rgba(34,197,94,0.10)" radius="md" padding={2} width="75%" align="center">Research Report</box>
+</box>
+
+try fathom:https://udify.app/chat/zT4jlWeHeqHHwjxO
